@@ -3,6 +3,13 @@
 <head>
   <link rel="stylesheet" type="text/css" href="layout/main.css" media="screen" />
   <script src="lib/jquery-2.0.3.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="lib/rssFeed.js"></script>
+  <script>
+    $(document).ready(function () {  
+        $('#feed').Feed();
+    });    
+</script>
 </head>
 <body>
   <div class="wrapper">
@@ -29,7 +36,7 @@
     </div>
   </div>
   <footer>
-      <p>Place for displaying dynamic content</p>
+    <marquee id="feed" scrollamount="4"></marquee>
   </footer>
 </body>
 </html>
