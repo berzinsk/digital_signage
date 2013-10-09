@@ -19,6 +19,10 @@ body {
   margin: 5px;
 }
 
+/*.content h1, p {
+  display: none;
+}*/
+
 .sidebar {
   float: left;
   width: 30%;
@@ -85,8 +89,9 @@ h1 {
   font-size: 3.1vw;
 }
 
-footer {
-  font-size: 1.5vw;
+#feed {
+  font-size: 2vw;
+  margin-top: 1em;
 }
 
 #feed ul {
@@ -99,8 +104,9 @@ footer {
   margin: 10px 10px 10px 10px;
 }
 
-#divRss br {
-  display: inline;
-  margin-left: 10px;
-  margin-right: 10px;
+#video {
+  text-align: center;
+}
+
+video {
 }

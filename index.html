@@ -5,11 +5,27 @@
   <script src="lib/jquery-2.0.3.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <script src="lib/rssFeed.js"></script>
+  <script src="lib/video_playback.js"></script>
   <script>
     $(document).ready(function () {  
         $('#feed').Feed();
     });    
-</script>
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('#video').Video();
+      $('#video').MultipleVideo();
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      var video = document.getElementsByTagName('video')[0];
+
+      video.onended = function(e) {
+        alert('video ended');
+}
+    });
+  </script>
 </head>
 <body>
   <div class="wrapper">
@@ -33,6 +49,12 @@
       <p id="current_number"><b>018</b></p>
       <p style="font-size: 2.5vw;">please come to desk:</p>
       <p style="font-size: 6.1vw;"><b>4</b></p>
+      <div id="video">
+        <video autoplay width="300px" height="300px">
+          <source src="media/sample.mp4" />
+          <source src="media/sample3.mp4" />
+        </video>
+      </div>
     </div>
   </div>
   <footer>
