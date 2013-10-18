@@ -106,8 +106,22 @@ h1 {
 }
 
 #video {
-  text-align: center;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: auto;
 }
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+#one {
+  margin-top: -70px;
+  margin-bottom: -70px;
+}
+
 
 #desk_number {
   font-size: 6.1vw;
